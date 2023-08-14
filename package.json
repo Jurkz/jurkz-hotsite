@@ -9,7 +9,6 @@
   "author": "Vinicius Klinger",
   "license": "ISC",
   "devDependencies": {
-    "daisyui": "^3.5.1",
     "tailwindcss": "^3.3.3"
   }
 }
