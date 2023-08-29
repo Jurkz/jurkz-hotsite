@@ -17,6 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://jurkzg.com.br/src/assets/imgs/jurkz-logo.svg">
     <meta property="og:url" content="https://jurkz.com.br">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="fixed w-full bg-white border-b">
@@ -30,19 +31,24 @@
             <nav class="hidden sm:flex justify-center text-lg font-semibold">
                 <ul class="flex flex-row text-[#6C72B0] text-center my-auto">
                     <li class="px-2 py-1">
-                        <a href="#como-funciona">Como funciona</a>
+                        <a class="hover:text-[#FF678E] duration-300" href="#como-funciona">Como funciona</a>
                     </li>
                     <li class="px-2 py-1">
-                        <a href="#diferenciais">Diferenciais</a>
+                        <a class="hover:text-[#FF678E] duration-300" href="#diferenciais">Diferenciais</a>
                     </li>
                     <li class="px-2 py-1">
-                        <a href="#contato">Contato</a>
+                        <a class="hover:text-[#FF678E] duration-300" href="#contato">Contato</a>
                     </li>
                 </ul>
             </nav>
 
             <!-- Mobile menu -->
-            <div class="sm:hidden">
+            <div class="sm:hidden flex flex-row items-center">
+                <div class="space-y-2 px-6">
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                    <div class="w-8 h-0.5 bg-gray-600"></div>
+                  </div>
                 <button></button>
                 <nav></nav>
             </div>
@@ -51,13 +57,13 @@
 
     <main class="font-cabin text-[#64636F] text-lg">
         <section id="main">
-            <div class="flex flex-col lg:flex-row w-full max-w-6xl mx-auto text-center lg:text-left py-6 px-2 items-center pt-16 xs:pt-20">
-                <div class="flex flex-col w-full lg:w-1/2 items-center">
+            <div class="flex flex-col lg:flex-row w-full max-w-6xl mx-auto text-center lg:text-left py-6 px-2 items-center pt-16 xs:py-28">
+                <div data-aos="fade-right" class="flex flex-col w-full lg:w-1/2 items-center">
                     <h1 class="text-4xl xs:text-5xl font-bold text-[#292832] py-6 px-2 xs:px-6 lg:px-0 font-raleway max-w-[782px]">Comprar e vender imóveis pode ser fácil com a Jurkz</h1>
                     <p class="text-lg xs:text-xl pb-6 px-2 xs:px-6 lg:px-0 max-w-[782px]">Temos a solução para que você crie o seu contrato, emita as certidões e faça o registro de maneira mais simples e acessível.</p>
                     <a class="bg-[#FF678E] text-white py-3 px-5 rounded-md shadow-lg font-medium lg:self-start" href="#contato">Tenho interesse!</a>
                 </div>
-                <div class="flex px-4 xs:px-10 lg:p-0 max-w-2xl lg:w-1/2 py-6 items-center">
+                <div data-aos="fade-up" class="flex px-4 xs:px-10 lg:p-0 max-w-2xl lg:w-1/2 py-6 items-center">
                     <img src="src/assets/imgs/progresso-mobile.png" alt="tela do app">
                 </div>
             </div>
@@ -66,27 +72,27 @@
         <section id="como-funciona">
             <div class="bg-[#6c72b0] w-full py-20">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="pb-12 text-center font-bold text-4xl md:text-5xl text-white font-raleway">Como funciona</h2>
+                    <h2 data-aos="fade-down" class="pb-12 text-center font-bold text-4xl md:text-5xl text-white font-raleway">Como funciona</h2>
                     <div class="flex flex-col lg:flex-row lg:space-x-6 lg:space-y-0 text-center lg:text-left w-11/12 xs:w-2/3 xs:max-w-2xl lg:max-w-none lg:w-full space-y-6 mx-auto md:text-xl">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
                             <div class="flex flex-col bg-white rounded-xl w-full lg:max-w-xs lg:h-full p-8 lg:items-start">
                                 <img class="mb-2 h-14" src="src/assets/imgs/doc-icon.svg" alt="icon">
                                 <p>Responda a nossas perguntas e gere o seu contrato.</p>
                             </div>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                             <div class="flex flex-col bg-white rounded-xl w-full lg:max-w-xs lg:h-full p-8 lg:items-start">
                                 <img class="mb-2 h-14" src="src/assets/imgs/invite-icon.svg" alt="icon">
                                 <p>Convide a outra parte do negócio para assinar o contrato, seja promessa ou escritura de compra e venda.</p>
                             </div>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                             <div class="flex flex-col bg-white rounded-xl w-full lg:max-w-xs lg:h-full p-8 lg:items-start">
                                 <img class="mb-2 h-14" src="src/assets/imgs/download-icon.svg" alt="icon">
                                 <p>Obtenha certidões com nossos parceiros, para auditoria ou lavratura da escritura.</p>
                             </div>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                             <div class="flex flex-col bg-white rounded-xl w-full lg:max-w-xs lg:h-full p-8 lg:items-start">
                                 <img class="mb-2 h-14" src="src/assets/imgs/upload-icon.svg" alt="icon">
                                 <p>Submeta o contrato para registro.</p>
@@ -99,34 +105,34 @@
 
         <section id="diferenciais">
             <div class="w-full max-w-6xl mx-auto py-20 text-center lg:text-left">
-                <h2 class="pb-12 font-bold text-[32px] md:text-5xl text-[#333333] font-raleway text-center px-2 xs:px-6">Nossos diferenciais</h2>
-                <div class="flex flex-col lg:flex-row items-center mb-24 md:mb-28">
-                    <div class="flex flex-col items-center lg:items-start mb-6">
+                <h2 data-aos="fade-down" class="pb-12 font-bold text-[32px] md:text-5xl text-[#333333] font-raleway text-center px-2 xs:px-6">Nossos diferenciais</h2>
+                <div class="flex flex-col lg:flex-row items-center mb-24 mt-16 md:mb-28">
+                    <div data-aos="fade-right" class="flex flex-col items-center lg:items-start mb-6">
                         <h3 class="mb-3 text-2xl md:text-4xl font-raleway font-bold text-[#333333]">Praticidade</h3>
                         <p class="mb-4 max-w-[650px] px-6 md:px-0 md:text-xl">Por que complicar o simples? Com nossa plataforma você consegue criar, negociar e registrar contratos sem sair de casa. Organizamos tudo com despachantes e cartórios parceiros.</p>
                         <a class="bg-[#FF678E] text-white py-3 px-5 rounded-md shadow-lg  font-medium lg:self-start" href="#contato">Quero praticidade!</a>
                     </div>
-                    <div class="px-6 lg:px-0 max-w-4xl lg:max-w-lg xl:max-w-2xl">
+                    <div data-aos="fade-up" class="px-6 lg:px-0 max-w-4xl lg:max-w-lg xl:max-w-2xl">
                         <img src="src/assets/imgs/visao-geral.png" alt="tela 'meus contratos'">
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row-reverse items-center mb-24 md:mb-28">
-                    <div class="flex flex-col items-center lg:items-start mb-6">
+                    <div data-aos="fade-left" class="flex flex-col items-center lg:items-start mb-6">
                         <h3 class="mb-3 text-2xl md:text-4xl font-raleway font-bold text-[#333333]">Qualidade</h3>
                         <p class="mb-4 max-w-[650px] px-6 md:px-0 md:text-xl">Somos formados por profissionais com ampla experiência em transações imobiliárias.</p>
                         <a class="bg-[#FF678E] text-white py-3 px-5 rounded-md shadow-lg  font-medium lg:self-start" href="#contato">Quero qualidade!</a>
                     </div>
-                    <div class="px-6 lg:px-0 max-w-4xl lg:max-w-lg xl:max-w-2xl">
+                    <div data-aos="fade-up" class="px-6 lg:px-0 max-w-4xl lg:max-w-lg xl:max-w-2xl">
                         <img src="src/assets/imgs/chat.png" alt="tela 'chat'">
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row items-center md:mb-28">
-                    <div class="flex flex-col items-center lg:items-start mb-6">
+                    <div data-aos="fade-right" class="flex flex-col items-center lg:items-start mb-6">
                         <h3 class="mb-3 text-2xl md:text-4xl font-raleway font-bold text-[#333333]">Acessibilidade</h3>
                         <p class="mb-4 max-w-[650px] px-6 md:px-0 md:text-xl">Não cobramos pela elaboração do contrato. Você pagará apenas pelo serviço de emissão das certidões e pelos emolumentos cartorários.</p>
                         <a class="bg-[#FF678E] text-white py-3 px-5 rounded-md shadow-lg  font-medium lg:self-start" href="#contato">Quero um contrato gratuito!</a>
                     </div>
-                    <div class="px-6 lg:px-0 max-w-4xl lg:max-w-lg xl:max-w-2xl">
+                    <div data-aos="fade-up" class="px-6 lg:px-0 max-w-4xl lg:max-w-lg xl:max-w-2xl">
                         <img src="src/assets/imgs/progresso.png" alt="tela 'progresso'">
                     </div>
                 </div>
@@ -136,9 +142,11 @@
         <section id="contato">
             <div class="bg-[#6c72b0] w-full py-20">
                 <div class="w-full max-w-6xl mx-auto text-white text-center">
-                    <h2 class="py-4 text-center font-bold text-[32px] md:text-4xl font-raleway px-2 xs:px-6">Agilize sua compra e venda</h2>
-                    <p class="md:text-xl">Preencha o formulário e entraremos em contato.</p>
-                    <form action="https://api.web3forms.com/submit" method="POST">
+                    <div data-aos="fade-down">
+                        <h2 class="py-4 text-center font-bold text-[32px] md:text-4xl font-raleway px-2 xs:px-6">Agilize sua compra e venda</h2>
+                        <p class="md:text-xl">Preencha o formulário e entraremos em contato.</p>
+                    </div>
+                    <form data-aos="fade-up" action="https://api.web3forms.com/submit" method="POST">
                         <input type="hidden" name="access_key" value="972f336f-dd72-4dad-a645-60e810565eb5">
                         <input type="hidden" name="subject" value="Solicitação de Contato">
                         <input type="hidden" name="from_name" value="Jurkz.com.br">
@@ -174,5 +182,8 @@
             </div>
         </footer>
     </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="src/main.js"></script>
 </body>
 </html>
